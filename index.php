@@ -26,37 +26,36 @@ usort ($articles,'compareDates');
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/sanitize.css@11.0.0/sanitize.css">
         <title>Plain news</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h2>News Feed</h2>
-
-            <!-- <nav>
+            <nav>
+                <h2>News</h2>
                 <a href="#">Home</a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </nav> -->
-
+                <a href="#">Category</a>
+            </nav>
         </header>
 
-        
+        <div class="wrapper">
         <?php foreach ($articles as $article): ?>
         
         <?php $authorName = getName($article['author'],$authors); ?>
 
             <article>
                 <h1><?php echo $article['title']; ?></h1>
-                <p><?php echo $article['content']; ?></p>
+                <p class="publishedDate">Published: <?php echo $article['publishedDate'];?></p>
+                <p class ="content"><?php echo $article['content']; ?></p>
                 <div class="publishedInfo">
-                    <p>	✏️<?php echo $authorName;?></p>
-                    <p>Published: <?php echo $article['publishedDate'];?></p>
-                    <p><?php echo $article['likes']; ?> 👍</p>
+                    <p>Written by: <?php echo $authorName;?></p>
+                    <p>Likes: <?php echo $article['likes']; ?></p>
                     
                 </div>
             </article>
         <?php endforeach; ?>
+        </div>
     </body>
 </html>
