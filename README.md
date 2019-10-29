@@ -1,11 +1,14 @@
 # Plain News Feed
 
+This is one of the first hand-in assignments for WU19 at Yrgo.
+It's a plain news feed created by using HTML, CSS and PHP. 
+
 ## Installation
-    1. Clone the repository
-    2. Set up a dedicated webserver with the document root as the cloned repository
+    1. Clone the repository 
+    2. Set up a webserver with the document root as the cloned repository.
     
 ## Functionality 
-* Sort posts by newest published date first 
+* Sort posts by latest published date
 * Filter posts by author
 
 ### Testers
