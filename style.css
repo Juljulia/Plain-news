@@ -1,18 +1,8 @@
 * {
     font-family: 'Karla', sans-serif;
     color:black;
-}
-
-
-body {
-    
-    background-color: white;
-}
-
-.wrapper {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -20,64 +10,122 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    position: fixed;
+    position: absolute;
+    top: 0;
     height: 50px;
     width: 100%;
-    background-color: white;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-article {
-    padding: 0 15px;
-    margin: 100px 0 0 0;
-    width: 75%;
-    border-bottom: 1px solid black;
+.wrapper { /*wrapper around the articles*/
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 25px 25px 25px;
+}
+
+article { 
+    padding: 5px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.headerText {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: sandybrown;
+    text-shadow: 2px 2px saddlebrown;
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
-
+    font-size: 1.2em;
 }
 
-h2 {
-    text-transform: uppercase;
-    font-size: 2em;
-}
-
-
-h1 {
-    font-size: 2em;
+.title {
+    font-size: 2.25em;
     text-transform: uppercase;
 }
-
-.publishedDate {
-    font-style: oblique;
-}
-
 
 .content {
+    font-size: 1em;
     line-height: 1.5em;
 }
 
 .publishedInfo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: space-evenly;
     border-top: 1px solid black;
-    font-style: oblique;
+    border-bottom: 1px solid black;
     font-size: 0.9em;
-
-    
+    padding: 7px 0;
 }
+
+
+.likes {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
 
 article:hover {
     background-color: sandybrown;
     transition: 0.5s;
 }
 
-/* @media screen and (min-width: 600px) {
-    body {
-      background-color: tomato;
+@media only screen and (min-width: 690px) {
+    nav {
+        height: 70px;
+        width: 100%;
+        background-color: white;
+        border: 1px solid black;
     }
- */
+
+    .wrapper { /*wrapper around the articles*/
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 70px auto;
+    }
+
+    article { 
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .publishedInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    
+    .headerText {
+        font-size: 3.5em;
+    }
+    
+    a {
+       font-size: 1.3em;
+    }
+    
+    .title {
+        font-size: 2.35em;
+    }
+    
+    .content {
+        font-size: 1.1em;
+    }
+    
+    
+    .likes {
+        font-size: 1em;
+    }
+}
+

@@ -34,28 +34,29 @@ usort ($articles,'compareDates');
     <body>
         <header>
             <nav>
-                <h2>News</h2>
+                <h2 class = "headerText">News</h2>
                 <a href="#">Home</a>
                 <a href="#">Category</a>
             </nav>
         </header>
 
         <div class="wrapper">
-        <?php foreach ($articles as $article): ?>
-        
-        <?php $authorName = getName($article['author'],$authors); ?>
+            <?php foreach ($articles as $article): ?>
 
-            <article>
-                <h1><?php echo $article['title']; ?></h1>
-                <p class="publishedDate">Published: <?php echo $article['publishedDate'];?></p>
-                <p class ="content"><?php echo $article['content']; ?></p>
-                <div class="publishedInfo">
-                    <p>Written by: <?php echo $authorName;?></p>
-                    <p>Likes: <?php echo $article['likes']; ?></p>
-                    
-                </div>
-            </article>
-        <?php endforeach; ?>
+            <?php $authorName = getName($article['author'],$authors); ?>
+
+                <article>
+                    <h1 class="title"><?php echo $article['title'];?></h1>
+                    <div class="publishedInfo">
+                        <p><?php echo $authorName;?></p>
+                        <p class="date">🕒<?php echo $article['publishedDate'];?></p>
+                    </div>
+                    <p class ="content"><?php echo $article['content']; ?></p>
+                    <div class="likeBorder">
+                        <p class= "likes">👍<?php echo $article['likes']; ?></p>
+                    </div>
+                </article>
+            <?php endforeach?>
         </div>
     </body>
 </html>
