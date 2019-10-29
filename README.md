@@ -1,5 +1,7 @@
 # Plain News Feed
 
+![newsFeedIcon](news.png)
+
 This is one of the first hand-in assignments for WU19 at Yrgo.
 It's a plain news feed created by using HTML, CSS and PHP. 
 
