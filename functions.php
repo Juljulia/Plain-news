@@ -2,24 +2,19 @@
 
 declare(strict_types=1);
 
-
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
-
-
 /**
- * Converts the publishedDate to time and compare the different publishedDates. 
+ * Compare the dates and return the "biggest" time value which is also the latest date. 
  *
  * @param array $a
  * @param array $b
  * @return integer
  */
     function compareDates(array $a, array $b) : int {
-      return strtotime($a['publishedDate']) - strtotime($b['publishedDate']);
+      return strtotime($b['publishedDate']) - strtotime($a['publishedDate']);
   }
 
 /**
- * 
+ * Searching for an id and connect it to the right author.
  *
  * @param integer $searchId
  * @param array $authors
