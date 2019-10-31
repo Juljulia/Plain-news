@@ -1,12 +1,10 @@
 # Plain News Feed
 
-![newsFeedIcon](/public/newspaper.png)
-
-This is one of the first hand-in assignments for WU19 at Yrgo.
-It's a plain news feed created by using HTML, CSS and PHP. 
+This is an hand-in assignment for Web developers students at Yrgo.
+It's a Plain News feed created by using HTML, CSS and PHP. 
 
 ## Installation
-    1. Clone the repository 
+    1. Clone the repository
     2. Set up a webserver with the document root as the cloned repository.
     
 ## Functionality 
