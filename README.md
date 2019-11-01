@@ -13,7 +13,7 @@ It's a Plain News feed created by using HTML, CSS and PHP.
 
 ### Testers
 * Emelie Petersson
-* name 
+* Camilla Kylmänen Sjörén 
 
 ### License
 
