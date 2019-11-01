@@ -18,13 +18,13 @@ nav {
 }
 
 .wrapper { /*wrapper around the articles*/
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 70px 25px 25px 25px;
 }
 
-article { 
+article {
     padding: 5px;
     width: 100%;
     border-bottom: 2px solid black;
@@ -63,7 +63,6 @@ a {
     padding: 7px 0;
 }
 
-
 .likes {
     display:flex;
     flex-direction: row;
@@ -72,7 +71,6 @@ a {
     padding: 5px;
     font-size: 0.9em;
 }
-
 
 article:hover {
     background-color: sandybrown;
@@ -88,14 +86,14 @@ article:hover {
     }
 
     .wrapper { /*wrapper around the articles*/
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 60%;
         margin: 70px auto;
     }
 
-    article { 
+    article {
         width: 100%;
         border-bottom: 2px solid black;
     }
@@ -106,24 +104,23 @@ article:hover {
         justify-content: space-between;
         font-size: 1em;
     }
-    
+
     .headerText {
         font-size: 3.5em;
     }
-    
+
     a {
        font-size: 1.3em;
     }
-    
+
     .title {
         font-size: 2.35em;
     }
-    
+
     .content {
         font-size: 1.1em;
     }
-    
-    
+
     .likes {
         font-size: 1em;
     }

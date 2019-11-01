@@ -30,18 +30,16 @@ usort ($articles,'compareDates');
         <div class="wrapper">
             <?php foreach ($articles as $article): ?>
 
-            <?php $authorName = getName($article['author'],$authors); ?>
+            <?php $authorName = getName($article['authorId'],$authors); ?>
 
                 <article>
                     <h1 class="title"><?php echo $article['title'];?></h1>
                     <div class="publishedInfo">
                         <p><?php echo $authorName;?></p>
-                        <p class="date">🕒<?php echo $article['publishedDate'];?></p>
+                        <p>🕒<?php echo $article['publishedDate'];?></p>
                     </div>
                     <p class ="content"><?php echo $article['content'];?></p>
-                    <div class="likeBorder">
-                        <p class= "likes">👍<?php echo $article['likes'];?></p>
-                    </div>
+                    <p class= "likes">👍<?php echo $article['likes'];?></p>
                 </article>
             <?php endforeach?>
         </div>

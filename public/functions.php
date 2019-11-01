@@ -14,18 +14,19 @@ declare(strict_types=1);
   }
 
 /**
- * Gets authors name by comparing authors id and articles author id
+ * Gets authors name by comparing authors id and articles authorId
  *
  * @param integer $searchId
  * @param array $authors
  * @return string
  */
-  function getName(int $searchId, array $authors): string {
-    foreach ($authors as $author) {
-            $id = $author ['id'];
-                if ($id == $searchId) {
-                    return $author ['name'];
-                }
+
+function getName(int $searchId, array $authors): string {
+  foreach ($authors as $author) {
+    $id = $author ['id'];
+    if ($id === $searchId) {
+      return $author ['name'];
     }
+  }
 };
 
