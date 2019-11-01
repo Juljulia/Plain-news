@@ -1,6 +1,6 @@
 # Plain News Feed
 
-This is an hand-in assignment for Web developers students at Yrgo.
+This is one of the first hand-in assignment for Web developers students at Yrgo 2019. 
 It's a Plain News feed created by using HTML, CSS and PHP. 
 
 ## Installation
