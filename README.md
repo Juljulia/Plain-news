@@ -12,7 +12,7 @@ It's a Plain News feed created by using HTML, CSS and PHP.
 * Filter posts by author
 
 ### Testers
-* name
+* Emelie Petersson
 * name 
 
 ### License
