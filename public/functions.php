@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Compare the dates and return the "biggest" time value which is also the latest date. 
+ * Compare the dates
  *
  * @param array $a
  * @param array $b
@@ -14,7 +14,7 @@ declare(strict_types=1);
   }
 
 /**
- * Searching for an id and connect it to the right author.
+ * Gets authors name by comparing authors id and articles author id
  *
  * @param integer $searchId
  * @param array $authors

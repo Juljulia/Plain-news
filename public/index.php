@@ -3,19 +3,6 @@
 require __DIR__ .'/functions.php';
 require __DIR__ .'/data.php';
 
-
-// This is the file where you can keep your HTML markup. We should always try to
-// keep us much logic out of the HTML as possible. Put the PHP logic in the top
-// of the files containing HTML or even better; in another PHP file altogether.
-
-/* 
-The authors and news feed items don't have to be within the same array 
-but some sort of connection should exist between a news feed item 
-and it's author. The news feed items should be ordered based on 
-the published date, so the latest news feed item should go on 
-top and vice versa. */
-
-
 usort ($articles,'compareDates');
 
 ?>
@@ -51,9 +38,9 @@ usort ($articles,'compareDates');
                         <p><?php echo $authorName;?></p>
                         <p class="date">🕒<?php echo $article['publishedDate'];?></p>
                     </div>
-                    <p class ="content"><?php echo $article['content']; ?></p>
+                    <p class ="content"><?php echo $article['content'];?></p>
                     <div class="likeBorder">
-                        <p class= "likes">👍<?php echo $article['likes']; ?></p>
+                        <p class= "likes">👍<?php echo $article['likes'];?></p>
                     </div>
                 </article>
             <?php endforeach?>
