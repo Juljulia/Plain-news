@@ -17,11 +17,11 @@ It's a Plain News feed created by using HTML, CSS and PHP.
 
 ### Code Review
 By Erik Johannesson
-*functions#25-28 - remove one tab space for consistency.
-*functions#26 - use === instead of == for better practise.
-*data#25-115 - change key from author to authorId to make it easier to understand the number.
-*index#30-47 - You have good structure on your code, which made it easy to read and understand.
-*index#39&42 - Maybe remove the date class and likesborder class since they are not used in css.
+* functions#25-28 - remove one tab space for consistency.
+* functions#26 - use === instead of == for better practise.
+* data#25-115 - change key from author to authorId to make it easier to understand the number.
+* index#30-47 - You have good structure on your code, which made it easy to read and understand.
+* index#39&42 - Maybe remove the date class and likesborder class since they are not used in css.
 
 ### License
 
